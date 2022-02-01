@@ -1,0 +1,123 @@
+.whole{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 6fr));
+  justify-content: center;
+  grid-gap: 50px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.left{
+  padding: 0%;
+}
+
+.right{
+  width: 50%;
+}
+.heading{
+color: rgb(4, 0, 241);
+font-size:350%;
+}
+
+.typed{
+  font-size: 300%;
+  color: black;
+}
+
+.feat{
+  display:flex;
+}
+
+.logo{
+  align-content: center;
+}
+
+.deaf{
+  align-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column {
+  display:flex;
+  float: left;
+  width:25%;
+  padding: 0 10px;
+  justify-content: space-around;
+}
+
+.row {
+  margin: 0 -5px;
+  display:flex;
+  justify-content: space-around;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #589dca;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.fa{
+  size: 50%;
+}
+
+
+
+.card{
+  border-radius: 4px;
+  color: black;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+
+cursor: pointer;
+}
+
+.card:hover{
+   transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card h3{
+font-weight: 600;
+}
+
+.card-1{
+  height: 90%;
+}
+
+.card-2{
+  height: 90%;
+}
+
+.card-3{
+  height: 90%;
+}
+
+@media(max-width: 990px){
+.card{
+  margin: 20px;
+}
+} 

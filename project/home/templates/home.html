@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<style>
+    .doctor {
+        transition: transform .9s;
+    }
+
+    .doctor:hover {
+        transform: scale(1.1);
+    }
+
+    .card {
+        background-color: rgb(202, 231, 255);
+    }
+</style>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="whole">
+    <div class="left">
+        <h3 class="heading">We Care about</h3><span class="typed"></span><br>
+        <h4>We are aiming to solve the problems faced by people with disabilities who
+            require continuous assistance. We aim to make them self dependent in external
+            environment. Also every disabled person isn't of means and not everyone can afford
+            to hire a personal attendant.
+        </h4>
+    </div>
+
+    <div class="right">
+        <img class="doctor" src="{% static 'frontend/assets/img/doctor1.png' %}" alt="">
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div>
+    <h2>What we have to offer:</h2><br>
+
+    <div class="container text-dark">
+        <div class="row">
+            <div class="col-md-4 p-2">
+                <div class="card card-1">
+                    <center><img src="{% static 'frontend/assets/img/blindeye.png' %}" height="100" width="100">
+                    </center>
+                    <h3>Visually Impaired</h3>
+                    <p>Helping them in navigating around the required area.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="card card-2">
+                    <center><img src="{% static 'frontend/assets/img/deaf.png' %}" height="100" width="100"></center>
+                    <h3>Auditory Disability</h3>
+                    <p>Helping them to communicate by converting the other person's speech to text.</p>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="card card-3">
+                    <center><img src="{% static 'frontend/assets/img/signlanguage.png' %}" height="100" width="100">
+                    </center>
+                    <h3>Vocal Disability</h3>
+                    <p>Helping them to communicate by converting their sign language into text.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script>
+    var options = { strings: ["Visually Impaired", "Vocally Disabled", "Auditorily Disabled"], typeSpeed: 100, loop: true, smartBackspace: false, showCursor: true, cursorChar: "_", backSpeed: 40, backDelay: 2000 };
+    var typed = new Typed(".typed", options);
+</script>
+
+
+{% endblock %}
